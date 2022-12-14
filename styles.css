@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue1: hsl(211, 68%, 94%);
+    --light-grayish-blue2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+main{
+    background-color: var(--white);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.notifications{
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    color: var(--very-dark-blue);
+    font-size: 19px;
+    font-weight: 900;
+}
+.total-notifications{
+    height: 25px;
+    width: 35px;
+    background-color: var(--blue);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.total-notifications p{
+    color: var(--white);
+    font-size: 500;
+}
+.mark-as-read{
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+#messages{
+    width: 90%;
+    margin: 0 auto;
+}
+.message-info{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    background-color: var(--light-grayish-blue1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.profile-pic img{
+    width: 45px;
+    height: 45px;
+}
+.contact-message{
+    margin-left: 10px;
+    display: inline;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+.name{
+    color: var(--very-dark-blue);
+    font-weight: 900;
+}
+.tournament{
+    color: var(--dark-grayish-blue);
+    font-weight: 900;
+}
+.red-dot{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 5px;
+}
+.time{
+    color: var(--grayish-blue);
+    font-weight: 500;
+}
+.chess-club{
+    color: var(--blue);
+    font-weight: 900;
+}
+.name:hover, .blue-hover:hover{
+    color: var(--blue);
+    transition: .3s;
+}
+
