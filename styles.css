@@ -27,6 +27,7 @@ p, span{
 }
 main{
     background-color: var(--white);
+    padding-bottom: 20px;
 }
 header{
     display: flex;
@@ -69,10 +70,12 @@ header h1{
     display: flex;
     /* justify-content: space-between; */
     width: 100%;
-    background-color: var(--light-grayish-blue1);
     padding: 10px 20px;
-    border-radius: 10px;
     margin-top: 10px;
+}
+.unread-message{
+    border-radius: 10px;
+    background-color: var(--light-grayish-blue1);
 }
 .profile-pic img{
     width: 45px;
@@ -88,7 +91,7 @@ header h1{
     color: var(--very-dark-blue);
     font-weight: 900;
 }
-.tournament{
+.topic{
     color: var(--dark-grayish-blue);
     font-weight: 900;
 }
@@ -112,4 +115,28 @@ header h1{
     color: var(--blue);
     transition: .3s;
 }
-
+.read-message{
+    background-color: none;
+}
+.opened-message{
+    border: .5px solid var(--dark-grayish-blue);
+    border-radius: 10px;
+    padding: 20px 10px;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.opened-message:hover{
+    transition: .3s;
+    background-color: var(--light-grayish-blue2);
+    border: none;
+}
+.contact-message-photo{
+    display: flex;
+    justify-content: space-between;
+}
+.photo-message img{
+    width: 45px;
+    height: 47px;
+}
