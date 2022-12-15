@@ -20,6 +20,11 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+p, span{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
 main{
     background-color: var(--white);
 }
