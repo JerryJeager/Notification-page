@@ -96,10 +96,10 @@ header h1{
     font-weight: 900;
 }
 .red-dot{
+    background-color: var(--red);
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    background-color: red;
     display: inline-block;
     margin-left: 5px;
 }
@@ -135,8 +135,20 @@ header h1{
 .contact-message-photo{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .photo-message img{
     width: 45px;
     height: 47px;
+}
+@media screen and (min-width: 720px){
+    body{
+        background-color: hsl(0, 0%, 95%);
+    }
+    main{
+        width: 60%;
+        margin: 3rem auto;
+        border-radius: 20px;
+        padding-top: 20px;
+    }
 }
