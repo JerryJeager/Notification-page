@@ -21,5 +21,12 @@ unreadMessageBackground.forEach(bg =>{
         }else{
             totalNotifications.innerHTML = `<p>${unread}</p>`
         }
+        bg.querySelector(".red-dot").style.display = "none"
     })
 })
+
+// const firstUnread = document.querySelector(".first")
+// console.log(firstUnread.contains(document.querySelector(".red-dot")))
+// const newRed = firstUnread.querySelector(".red-dot")
+// console.log(newRed)
+// newRed.style.display = "none"
